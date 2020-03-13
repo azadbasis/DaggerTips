@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="android.support.v4.media.session.MediaControllerCompat.Callback void onRepeatModeChanged(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_INVALID, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_NONE, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_ONE, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_ALL, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_GROUP}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaControllerCompat.Callback void onShuffleModeChanged(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_INVALID, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_NONE, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_ALL, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_GROUP}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaControllerCompat.TransportControls void setRepeatMode(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_INVALID, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_NONE, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_ONE, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_ALL, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_GROUP}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaControllerCompat.TransportControls void setShuffleMode(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_INVALID, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_NONE, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_ALL, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_GROUP}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaControllerCompat.TransportControlsApi21 void setRepeatMode(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_INVALID, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_NONE, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_ONE, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_ALL, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_GROUP}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaControllerCompat.TransportControlsApi21 void setShuffleMode(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_INVALID, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_NONE, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_ALL, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_GROUP}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaControllerCompat.TransportControlsBase void setRepeatMode(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_INVALID, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_NONE, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_ONE, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_ALL, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_GROUP}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaControllerCompat.TransportControlsBase void setShuffleMode(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_INVALID, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_NONE, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_ALL, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_GROUP}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaSessionCompat void setFlags(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{android.support.v4.media.session.MediaSessionCompat.FLAG_HANDLES_MEDIA_BUTTONS, android.support.v4.media.session.MediaSessionCompat.FLAG_HANDLES_TRANSPORT_CONTROLS, android.support.v4.media.session.MediaSessionCompat.FLAG_HANDLES_QUEUE_COMMANDS}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaSessionCompat void setRatingType(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.RatingCompat.RATING_NONE, android.support.v4.media.RatingCompat.RATING_HEART, android.support.v4.media.RatingCompat.RATING_THUMB_UP_DOWN, android.support.v4.media.RatingCompat.RATING_3_STARS, android.support.v4.media.RatingCompat.RATING_4_STARS, android.support.v4.media.RatingCompat.RATING_5_STARS, android.support.v4.media.RatingCompat.RATING_PERCENTAGE}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaSessionCompat void setRepeatMode(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_INVALID, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_NONE, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_ONE, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_ALL, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_GROUP}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaSessionCompat void setShuffleMode(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_INVALID, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_NONE, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_ALL, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_GROUP}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaSessionCompat.Callback void onSetRepeatMode(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_INVALID, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_NONE, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_ONE, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_ALL, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_GROUP}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaSessionCompat.Callback void onSetShuffleMode(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_INVALID, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_NONE, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_ALL, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_GROUP}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaSessionCompat.MediaSessionImpl void setFlags(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{android.support.v4.media.session.MediaSessionCompat.FLAG_HANDLES_MEDIA_BUTTONS, android.support.v4.media.session.MediaSessionCompat.FLAG_HANDLES_TRANSPORT_CONTROLS, android.support.v4.media.session.MediaSessionCompat.FLAG_HANDLES_QUEUE_COMMANDS}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaSessionCompat.MediaSessionImpl void setRatingType(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.RatingCompat.RATING_NONE, android.support.v4.media.RatingCompat.RATING_HEART, android.support.v4.media.RatingCompat.RATING_THUMB_UP_DOWN, android.support.v4.media.RatingCompat.RATING_3_STARS, android.support.v4.media.RatingCompat.RATING_4_STARS, android.support.v4.media.RatingCompat.RATING_5_STARS, android.support.v4.media.RatingCompat.RATING_PERCENTAGE}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaSessionCompat.MediaSessionImpl void setRepeatMode(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_INVALID, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_NONE, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_ONE, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_ALL, android.support.v4.media.session.PlaybackStateCompat.REPEAT_MODE_GROUP}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaSessionCompat.MediaSessionImpl void setShuffleMode(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_INVALID, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_NONE, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_ALL, android.support.v4.media.session.PlaybackStateCompat.SHUFFLE_MODE_GROUP}" />
+    </annotation>
+  </item>
+  <item name="android.support.v4.media.session.MediaSessionCompat.MediaSessionImplApi21 mRatingType">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.support.v4.media.RatingCompat.RATING_NONE, android.support.v4.media.RatingCompat.RATING_HEART, android.support.v4.media.RatingCompat.RATING_THUMB_UP_DOWN, android.support.v4.media.Rati
