@@ -1,13 +1,14 @@
 package com.daggertips.model;
 
+import javax.inject.Inject;
+
 public class Engine {
     private Block block;
     private Cylinders cylinders;
     private SparkPlugs sparkPlugs;
 
-    public Engine(Block block, Cylinders cylinders, SparkPlugs sparkPlugs) {
-        this.block = block;
-        this.cylinders = cylinders;
-        this.sparkPlugs = sparkPlugs;
+    @Inject
+    public Engine() {
+
     }
 }

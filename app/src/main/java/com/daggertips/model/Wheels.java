@@ -1,12 +1,14 @@
 package com.daggertips.model;
 
+import javax.inject.Inject;
+
 public class Wheels {
 
     private Tires tires;
     private Rims rims;
 
-    public Wheels(Tires tires, Rims rims) {
-        this.tires = tires;
-        this.rims = rims;
+    @Inject
+    public Wheels() {
+
     }
 }
