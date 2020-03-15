@@ -21,6 +21,16 @@ public final class DaggerCarComponent implements CarComponent {
     return new Car(new Engine(), new Wheels());
   }
 
+  @Override
+  public void inject(MainActivity mainActivity) {
+    injectMainActivity(mainActivity);
+  }
+
+  private MainActivity injectMainActivity(MainActivity instance) {
+    MainActivity_MembersInjector.injectCar(instance, getCar());
+    return instance;
+  }
+
   public static final class Builder {
     private Builder() {}
 

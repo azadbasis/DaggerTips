@@ -6,17 +6,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.daggertips.model.Car;
 
+import javax.inject.Inject;
+
 public class MainActivity extends AppCompatActivity {
 
-    private Car car;
+    @Inject
+    Car car;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        CarComponent component=DaggerCarComponent.create();
-        car=component.getCar();
+        CarComponent component = DaggerCarComponent.create();
+        //  car=component.getCar();
+        component.inject(this);
         car.drive();
     }
 }
