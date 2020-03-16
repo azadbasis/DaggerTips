@@ -2,7 +2,10 @@
 package com.daggertips;
 
 import com.daggertips.model.Car;
+import com.daggertips.model.Car_Factory;
+import com.daggertips.model.Car_MembersInjector;
 import com.daggertips.model.Engine;
+import com.daggertips.model.Remote;
 import com.daggertips.model.Wheels;
 
 public final class DaggerCarComponent implements CarComponent {
@@ -18,12 +21,18 @@ public final class DaggerCarComponent implements CarComponent {
 
   @Override
   public Car getCar() {
-    return new Car(new Engine(), new Wheels());
+    return injectCar(Car_Factory.newCar(new Wheels()));
   }
 
   @Override
   public void inject(MainActivity mainActivity) {
     injectMainActivity(mainActivity);
+  }
+
+  private Car injectCar(Car instance) {
+    Car_MembersInjector.injectEngine(instance, new Engine());
+    Car_MembersInjector.injectEnableRemote(instance, new Remote());
+    return instance;
   }
 
   private MainActivity injectMainActivity(MainActivity instance) {
