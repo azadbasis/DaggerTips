@@ -7,9 +7,14 @@ import com.daggertips.model.Car_MembersInjector;
 import com.daggertips.model.Engine;
 import com.daggertips.model.Remote;
 import com.daggertips.model.Wheels;
+import dagger.internal.Preconditions;
 
 public final class DaggerCarComponent implements CarComponent {
-  private DaggerCarComponent(Builder builder) {}
+  private WheelsModule wheelsModule;
+
+  private DaggerCarComponent(Builder builder) {
+    this.wheelsModule = builder.wheelsModule;
+  }
 
   public static Builder builder() {
     return new Builder();
@@ -19,9 +24,16 @@ public final class DaggerCarComponent implements CarComponent {
     return new Builder().build();
   }
 
+  private Wheels getWheels() {
+    return WheelsModule_ProvideWheelsFactory.proxyProvideWheels(
+        wheelsModule,
+        WheelsModule_ProvideRimsFactory.proxyProvideRims(wheelsModule),
+        WheelsModule_ProvideTiresFactory.proxyProvideTires(wheelsModule));
+  }
+
   @Override
   public Car getCar() {
-    return injectCar(Car_Factory.newCar(new Wheels()));
+    return injectCar(Car_Factory.newCar(new Engine(), getWheels()));
   }
 
   @Override
@@ -30,7 +42,6 @@ public final class DaggerCarComponent implements CarComponent {
   }
 
   private Car injectCar(Car instance) {
-    Car_MembersInjector.injectEngine(instance, new Engine());
     Car_MembersInjector.injectEnableRemote(instance, new Remote());
     return instance;
   }
@@ -41,10 +52,20 @@ public final class DaggerCarComponent implements CarComponent {
   }
 
   public static final class Builder {
+    private WheelsModule wheelsModule;
+
     private Builder() {}
 
     public CarComponent build() {
+      if (wheelsModule == null) {
+        this.wheelsModule = new WheelsModule();
+      }
       return new DaggerCarComponent(this);
+    }
+
+    public Builder wheelsModule(WheelsModule wheelsModule) {
+      this.wheelsModule = Preconditions.checkNotNull(wheelsModule);
+      return this;
     }
   }
 }

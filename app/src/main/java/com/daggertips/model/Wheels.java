@@ -1,14 +1,17 @@
 package com.daggertips.model;
 
-import javax.inject.Inject;
 
 public class Wheels {
+    /**
+     * we don't own this class so we can't annotate it with @Inject
+     */
 
-    private Tires tires;
+
     private Rims rims;
+    private Tires tires;
 
-    @Inject
-    public Wheels() {
-
+    public Wheels(Rims rims, Tires tires) {
+        this.rims = rims;
+        this.tires = tires;
     }
 }
