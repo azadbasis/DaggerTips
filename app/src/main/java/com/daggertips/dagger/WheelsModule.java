@@ -1,4 +1,4 @@
-package com.daggertips;
+package com.daggertips.dagger;
 
 import com.daggertips.model.Rims;
 import com.daggertips.model.Tires;

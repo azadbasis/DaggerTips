@@ -1,5 +1,6 @@
-package com.daggertips;
+package com.daggertips.dagger;
 
+import com.daggertips.MainActivity;
 import com.daggertips.model.Car;
 
 import dagger.Component;

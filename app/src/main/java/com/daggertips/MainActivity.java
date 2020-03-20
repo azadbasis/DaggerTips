@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.daggertips.dagger.CarComponent;
 import com.daggertips.model.Car;
 
 import javax.inject.Inject;
